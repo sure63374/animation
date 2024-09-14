@@ -1,0 +1,47 @@
+body{
+    width: 97vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 98vh;
+}
+
+#button_box{
+    width: 200px;
+    height: 80px;
+    background-color:rgb(178, 200, 219);
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+#rotating_line{
+    width: 250px;
+    height: 40px;
+    background: linear-gradient(45deg, blue,green );
+    rotate: -30deg;
+    animation-name: rotate;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    position: relative;
+}
+@keyframes rotate{
+    0%{
+        transform:rotate(0deg) ;
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+button{
+    position: absolute;
+    width: 194px;
+    height: 75px;
+    border-radius: 100px;
+    margin-top: 80px;
+    border: none;
+    background-color: rgb(255, 255, 255);
+}
